@@ -1,6 +1,8 @@
 # Calculator
 import math
 
+finish = False
+
 def calculator():
     print("Welcome to the Calculator!\n")
     print("Select an operation to perform:\n")
@@ -11,7 +13,7 @@ def calculator():
     print("5. Power (^)")
     print("6. Square Root (√)")
 
-    finish = False
+    global finish
 
     def check_if_numeric(prompt):
         while True:
